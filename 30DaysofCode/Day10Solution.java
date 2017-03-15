@@ -18,22 +18,23 @@ public class Solution {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-        char[]binaryArr = Integer.toBinaryString(n).toCharArray();
-        int oneCount =0;
+        String binaryStr = Integer.toBinaryString(n);
+        int maxCount =0;
         int count =0;
-        for(int i = 0;  i<binaryArr.length; i++){
-            if(binaryArr[i] == '1'){
+        for(int i = 0;  i < binaryStr.length(); i++){
+            if(binaryStr.charAt(i) == '1'){
              count++;
+             if(count > maxCount){
+              maxCount = count; 
+             }
             }else{
-                if(count > oneCount){
-                    oneCount = count; 
-                    count =0;
-                }
+                count = 0;
             }
         }
-        System.out.println(oneCount);
+        System.out.println(maxCount);
     }
 }
+
 /*
 ##Task
 Given a base- integer, , convert it to binary (base-). Then find and print the base- integer denoting the maximum number of consecutive 's in 's binary representation.
@@ -62,4 +63,13 @@ Print a single base- integer denoting the maximum number of consecutive 's in th
 
 2
 
+*/
+
+/*
+##TestCase 1
+- Input: 439 
+- Output: 3
+##TestCase 2
+- Input: 65535 
+- Output: 16
 */
