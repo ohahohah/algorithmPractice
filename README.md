@@ -1,5 +1,5 @@
-#Practice Project Using HackerRank
-###Solution
+# Practice - HackerRank
+## Project
 - 30 Days of code
 - Algorithms
     + WarmUp
