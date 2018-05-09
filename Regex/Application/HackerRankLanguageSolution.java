@@ -5,10 +5,10 @@ HackerRank.Regex.Applications.HackerRank Language
 @author ohahohah.github.io
 @version 1.0
 */
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.util.regex.*;
+
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class HackerRankLanguageSolution {
 

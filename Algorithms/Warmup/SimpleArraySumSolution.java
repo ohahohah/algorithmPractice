@@ -6,11 +6,7 @@ HackerRank.Algorithms.WarmUp.Simple Array Sum
 @version 1.0
 */
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
 public class SimpleArraySumSolution {
     static int sumArray(int arr[]){
