@@ -9,17 +9,23 @@ public class Solution {
    * Complete the handshake function below.
    */
   static int handshake(int n) {
-    if(n<1) return 0;
-    return (n)*(n-1)/2;
+    if (n < 1) {
+      return 0;
+    }
+    return (n) * (n - 1) / 2;
   }
+
+//  TODO 다른 aseert 구현
 
   private static void assertResult(int input, int expected) {
     int actual = handshake(input);
-    if(actual!=expected) {
-      System.out.println("not equals for input "+input+", expected="+expected+", actual="+actual);
+    if (actual != expected) {
+      System.out.println(
+          "not equals for input " + input + ", expected=" + expected + ", actual=" + actual);
     }
 
   }
+
   private static void runTestCase() {
     assertResult(1, 0);
     assertResult(2, 1);
@@ -32,19 +38,25 @@ public class Solution {
 
   private static boolean isLocal() {
     String current_path = System.getProperty("user.dir");
-    return current_path.startsWith("/Users/mac/");
+    String localActualPath = "/Users/mac/";
+    //TODO change localActualPath
+    return current_path.startsWith(localActualPath);
   }
 
   private static final Scanner scanner = new Scanner(System.in);
 
   public static void main(String[] args) throws IOException {
-    if(isLocal()) { runTestCase(); }
-    else { doOriginalMain(args); }
+    if (isLocal()) {
+      runTestCase();
+    } else {
+      doOriginalMain(args);
+    }
   }
 
   public static void doOriginalMain(String[] args) throws IOException {
     //TODO OUTPUT_PATH 설정하기
-    BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+    BufferedWriter bufferedWriter = new BufferedWriter(
+        new FileWriter(System.getenv("OUTPUT_PATH")));
 
     int t = Integer.parseInt(scanner.nextLine().trim());
 
