@@ -1,17 +1,15 @@
+import java.util.Scanner;
+
 ---
 /**
-<pre>
-HackerRank 30 Days of Code. Day 9: Recursion
-</pre>
-@author ohahohah.github.io
-@version 1.0
-</pre>
-*/
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+ * <pre>
+ * HackerRank 30 Days of Code. Day 9: Recursion
+ * </pre>
+ *
+ * @author ohahohah.github.io
+ * @version 1.0
+ * </pre>
+ */
 
 public class Solution {
     public static int factorial(int n){

@@ -5,7 +5,8 @@ HackerRank 30 Days of Code.Day 12: Inheritance
 @author ohahohah.github.io
 @version 1.0
 */
-import java.util.*;
+
+import java.util.Scanner;
 class Person {
     protected String firstName;
     protected String lastName;

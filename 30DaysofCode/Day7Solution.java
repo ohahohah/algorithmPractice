@@ -5,8 +5,8 @@ HackerRank 30 Days of Code. Day 7
 @author ohahohah.github.io
 @version 1.0
 */
-import java.io.*;
-import java.util.*;
+
+import java.util.Scanner;
 
 
 public class Solution {

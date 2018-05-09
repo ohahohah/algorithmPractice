@@ -5,7 +5,8 @@ HackerRank 30 Days of Code.Day 13: Abstract Class
 @author ohahohah.github.io
 @version 1.0
 */
-import java.util.*;
+
+import java.util.Scanner;
 
 abstract class Book {
     String title;

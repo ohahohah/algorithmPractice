@@ -7,11 +7,8 @@ HackerRank 30 Days of Code.Day 10: Binary Numbers
 @version 1.0
 </pre>
 */
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+
+import java.util.Scanner;
 
 public class Solution {
 

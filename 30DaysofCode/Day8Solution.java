@@ -5,8 +5,10 @@ HackerRank 30 Days of Code. Day 8: Dictionaries and Maps
 @author: ohahohah.githyb.io
 @version: 1.0
 */
-import java.util.*;
-import java.io.*;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
 class Solution{
     public static void main(String []argh){
