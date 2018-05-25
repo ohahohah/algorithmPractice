@@ -39,7 +39,7 @@ class Solution {
   }
 
   private void runExceptionCase() {
-    assertResult(0, -1;
+    assertResult(0, -1);
   }
 
   private void runMaxCase() {
